@@ -1,0 +1,47 @@
+li title {
+  background-color: gray;
+  color: white;
+}
+
+.teste::after,
+.teste::after {
+  content: attr(aria-label);
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0px;
+  z-index: 5000;
+  pointer-events: none;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: red;
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+[data-title]:after {
+  content: attr(data-title);
+  background-color: #a1a0a0;
+  color: white;
+  font-size: 90%;
+  position: absolute;
+  padding: 1px 5px 2px 5px;
+  bottom: -1.6em;
+  left: 4.3%;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px #222222;
+  opacity: 0;
+  /* border: 1px solid #111111; */
+  z-index: 99999;
+  visibility: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+[data-title] {
+  position: relative;
+}
